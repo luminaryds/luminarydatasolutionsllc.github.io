@@ -40,9 +40,11 @@ nav.container {
     align-items: center;
 }
 
-.logo img {
-    height: 50px;
-    width: auto;
+.logo {
+    color: var(--dark-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .nav-links {
