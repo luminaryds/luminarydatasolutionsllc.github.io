@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('DOMContentLoaded', function() {
     const burger = document.querySelector('.burger');
     const navLinks = document.querySelector('.nav-links');
@@ -13,12 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
 
-            navLinks.classList.remove('nav-active'); // Close nav on click (mobile)
-            burger.classList.remove('toggle');
-
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-});
+            // Close the navigation menu if it's open (mobile)
+            if (navLinks.classList.contains('nav-active')) {
+                navLinks.classList.remove('nav-active');
+                burger.classList.remove('toggle'); // Remove toggle class if present
