@@ -1,18 +1,19 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const burger = document.querySelector('.burger');
-    const navLinks = document.querySelector('.nav-links');
+// script.js
+const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
 
-    burger.addEventListener('click', () => {
-        navLinks.classList.toggle('nav-active');
-        burger.classList.toggle('toggle'); // Optional: for burger animation
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    burger.classList.toggle('toggle'); // For the animation (if you use the CSS)
+});
+
+// Close the mobile menu when a link is clicked (optional but good UX)
+const navLinksList = document.querySelectorAll('.nav-links li');
+navLinksList.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        burger.classList.remove('toggle');
     });
-
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            // Close the navigation menu if it's open (mobile)
-            if (navLinks.classList.contains('nav-active')) {
-                navLinks.classList.remove('nav-active');
-                burger.classList.remove('toggle'); // Remove toggle class if present
+});
+// Get the current year for the copyright
+document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
