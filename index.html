@@ -6,15 +6,18 @@
     <title>Luminary Data Solutions LLC</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo-container">
-                <img src="images/logo.jpg" alt="Luminary Data Solutions Logo" class="logo">
+                <img src="https://via.placeholder.com/50x50" alt="Luminary Data Solutions Logo" class="logo">
                 <h1>Luminary Data Solutions</h1>
             </div>
-            <ul>
+            <button class="burger" aria-label="Toggle Navigation">
+                <i class="fas fa-bars"></i>  </button>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -32,13 +35,16 @@
     </section>
 
     <section id="about" class="content-section">
+        <div class="container">
         <h2>About Us</h2>
         <p>At Luminary Data Solutions, we are dedicated to helping businesses like yours harness the power of data. With years of experience in data analysis, strategy, and implementation, we provide tailored consulting services to illuminate your path to success.</p>
         <h3>Our Mission</h3>
         <p>To empower organizations to make informed decisions and achieve strategic goals through expert data solutions.</p>
+        </div>
     </section>
 
     <section id="services" class="content-section">
+        <div class="container">
         <h2>Our Services</h2>
         <div class="services-grid">
             <div class="service">
@@ -47,12 +53,12 @@
                 <p>Uncover hidden patterns and actionable insights from your data to drive better business outcomes.</p>
             </div>
             <div class="service">
-                <i class="fas fa-strategy"></i>
+                <i class="fas fa-cogs"></i>
                 <h3>Data Strategy & Planning</h3>
                 <p>Develop a robust data strategy aligned with your business objectives for sustainable growth.</p>
             </div>
             <div class="service">
-                <i class="fas fa-cogs"></i>
+                <i class="fas fa-wrench"></i>
                 <h3>Data Implementation & Solutions</h3>
                 <p>Implement cutting-edge data solutions and infrastructure to optimize your data operations.</p>
             </div>
@@ -62,30 +68,32 @@
                 <p>Gain real-time visibility into your key metrics with interactive reports and dashboards.</p>
             </div>
         </div>
+    </div>
     </section>
 
     <section id="contact" class="content-section">
+        <div class="container">
         <h2>Contact Us</h2>
-        <p>Let's discuss how Luminary Data Solutions LLC can help your business shine.</p>
+        <p>Let's discuss how Luminary Data Solutions can help your business shine.</p>
         <div class="contact-container">
             <div class="contact-info">
                 <address>
                     <p><i class="fas fa-envelope"></i> <a href="mailto:info@luminarydatasolutionsllc.com">info@luminarydatasolutionsllc.com</a></p>
                     <p><i class="fas fa-phone"></i> (555) 123-4567</p>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Suite 100<br>Clearfield, Utah, 84015</p>
                 </address>
             </div>
             <form action="#" method="post" class="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
+                <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+                <textarea name="message" placeholder="Your Message" rows="5" required aria-label="Your Message"></textarea>
                 <button type="submit">Send Message</button>
             </form>
+        </div>
         </div>
     </section>
 
     <footer>
-        <div class="footer-content">
+        <div class="footer-content container">
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <ul>
@@ -98,15 +106,17 @@
             <div class="footer-section">
                 <h4>Connect With Us</h4>
                 <div class="social-icons">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Luminary Data Solutions LLC. All rights reserved.</p>
+            <p>&copy; <span id="copyright-year"></span> Luminary Data Solutions LLC. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
