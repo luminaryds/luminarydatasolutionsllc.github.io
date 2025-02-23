@@ -3,170 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luminary Data Solutions LLC - Illuminating Data Solutions</title>
+    <title>Luminary Data Solutions LLC</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <nav class="container">
-            <a href="/" class="logo">
-                <img src="images/logo.jpg" alt="Luminary Data Solutions Logo" style="vertical-align: middle;">
-                <span style="vertical-align: middle;">Luminary Data Solutions</span>
-            </a>
-            <ul class="nav-links">
+        <nav>
+            <div class="logo-container">
+                <img src="images/logo.jpg" alt="Luminary Data Solutions Logo" class="logo">
+                <h1>Luminary Data Solutions</h1>
+            </div>
+            <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#insights">Insights</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
         </nav>
     </header>
 
     <section id="home" class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1>Illuminating Your Path with Data-Driven Solutions</h1>
-                <p>Expert consulting to transform your data into actionable insights and strategic advantages.</p>
-                <a href="#services" class="btn primary-btn">Explore Our Services</a>
-            </div>
-            <div class="hero-image">
-                <img src="images/hero-image.svg" alt="Data Analysis Illustration">
-            </div>
+        <div class="hero-content">
+            <h2>Welcome to Luminary Data Solutions</h2>
+            <p>Illuminating Your Path to Data-Driven Success</p>
+            <a href="#about" class="cta-button">Learn More</a>
         </div>
     </section>
 
     <section id="about" class="content-section">
-        <div class="container">
-            <h2 class="section-title">About Luminary Data Solutions LLC</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="images/about-us.svg" alt="Team Collaboration">
-                </div>
-                <div class="about-text">
-                    <h3>Our Story</h3>
-                    <p>Founded on the principle of empowering businesses through data, Luminary Data Solutions LLC brings together a team of experienced data scientists, analysts, and strategists. We are passionate about unraveling complex data challenges and delivering clear, impactful solutions.</p>
-                    <h3>Our Mission</h3>
-                    <p>To provide exceptional data consulting services that enable our clients to achieve their business objectives and gain a competitive edge in the data-driven world. We focus on delivering practical, sustainable, and innovative data strategies.</p>
-                    <a href="#contact" class="btn secondary-btn">Contact Us</a>
-                </div>
+        <h2>About Us</h2>
+        <p>At Luminary Data Solutions, we are dedicated to helping businesses like yours harness the power of data. With years of experience in data analysis, strategy, and implementation, we provide tailored consulting services to illuminate your path to success.</p>
+        <h3>Our Mission</h3>
+        <p>To empower organizations to make informed decisions and achieve strategic goals through expert data solutions.</p>
+    </section>
+
+    <section id="services" class="content-section">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service">
+                <i class="fas fa-chart-line"></i>
+                <h3>Data Analysis & Insights</h3>
+                <p>Uncover hidden patterns and actionable insights from your data to drive better business outcomes.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-strategy"></i>
+                <h3>Data Strategy & Planning</h3>
+                <p>Develop a robust data strategy aligned with your business objectives for sustainable growth.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-cogs"></i>
+                <h3>Data Implementation & Solutions</h3>
+                <p>Implement cutting-edge data solutions and infrastructure to optimize your data operations.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Customized Reporting & Dashboards</h3>
+                <p>Gain real-time visibility into your key metrics with interactive reports and dashboards.</p>
             </div>
         </div>
     </section>
 
-    <section id="services" class="content-section bg-light">
-        <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-chart-bar service-icon"></i>
-                    <h3>Data Analysis & Insights</h3>
-                    <p>Transform raw data into meaningful insights with our comprehensive analysis services. We help you understand trends, patterns, and opportunities hidden within your data.</p>
-                    <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-sitemap service-icon"></i>
-                    <h3>Data Strategy & Planning</h3>
-                    <p>Develop a future-proof data strategy aligned with your business goals. We create roadmaps for data collection, management, and utilization to drive growth.</p>
-                    <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-laptop-code service-icon"></i>
-                    <h3>Data Implementation & Solutions</h3>
-                    <p>Implement cutting-edge data solutions tailored to your specific needs. From database design to custom software, we ensure seamless data operations.</p>
-                    <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-chart-line service-icon"></i>
-                    <h3>Predictive Analytics</h3>
-                    <p>Leverage the power of predictive analytics to forecast trends and make proactive decisions. Stay ahead of the curve with data-driven predictions.</p>
-                    <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-tachometer-alt service-icon"></i>
-                    <h3>Business Intelligence Dashboards</h3>
-                    <p>Visualize your key performance indicators with interactive and insightful dashboards. Monitor your business health in real-time and make informed decisions.</p>
-                    <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-users-cog service-icon"></i>
-                    <h3>Data Training & Workshops</h3>
-                    <p>Empower your team with the skills to understand and utilize data effectively. We offer customized training programs and workshops for all levels.</p>
-                    <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
-                </div>
+    <section id="contact" class="content-section">
+        <h2>Contact Us</h2>
+        <p>Let's discuss how Luminary Data Solutions LLC can help your business shine.</p>
+        <div class="contact-container">
+            <div class="contact-info">
+                <address>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@luminarydatasolutionsllc.com">info@luminarydatasolutionsllc.com</a></p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Suite 100<br>Clearfield, Utah, 84015</p>
+                </address>
             </div>
-        </div>
-    </section>
-
-    <section id="insights" class="content-section">
-        <div class="container">
-            <h2 class="section-title">Our Insights</h2>
-            <div class="insights-grid">
-                <article class="insight-card">
-                    <img src="images/insight-1.jpg" alt="Insight 1">
-                    <h3>The Future of Data Analytics in 2025</h3>
-                    <p>Explore the emerging trends and technologies that will shape the data analytics landscape in the coming year.</p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                </article>
-                <article class="insight-card">
-                    <img src="images/insight-2.jpg" alt="Insight 2">
-                    <h3>Leveraging AI for Business Growth</h3>
-                    <p>Discover how artificial intelligence can be strategically implemented to drive business growth and innovation.</p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                </article>
-                <article class="insight-card">
-                    <img src="images/insight-3.jpg" alt="Insight 3">
-                    <h3>Data Security Best Practices</h3>
-                    <p>Understand the essential security measures to protect your valuable data assets from evolving cyber threats.</p>
-                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                </article>
-            </div>
-            <div class="view-all-insights">
-                <a href="#" class="btn secondary-btn">View All Insights</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="content-section bg-light">
-        <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <div class="contact-content">
-                <div class="contact-details">
-                    <h3>Get in Touch</h3>
-                    <p>Ready to illuminate your data potential? Contact us today for a consultation.</p>
-                    <address>
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@luminarydatasolutionsllc.com">info@luminarydatasolutionsllc.com</a></p>
-                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
-                    </address>
-                </div>
-                <div class="contact-form">
-                    <form action="#" method="post">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                        <button type="submit" class="btn primary-btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
+            <form action="#" method="post" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </section>
 
     <footer>
-        <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
             <p>&copy; 2025 Luminary Data Solutions LLC. All rights reserved.</p>
-            <ul class="footer-links">
-                <li><a href="#privacy">Privacy Policy</a></li>
-                <li><a href="#terms">Terms of Service</a></li>
-            </ul>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
