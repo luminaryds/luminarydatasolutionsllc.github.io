@@ -7,7 +7,7 @@ const navLinks = document.querySelector('.nav-links');
 // Toggle the nav and the burger animation
 burgerBtn.addEventListener('click', () => {
     // Show/hide the menu
-    navLinks.classList.toggle('nav-active'); // Changed 'active' to 'nav-active' to match the CSS
+    navLinks.classList.toggle('nav-active');
 
     // Toggle the burger icon animation class
     burgerBtn.classList.toggle('toggle');
@@ -24,10 +24,9 @@ burgerBtn.addEventListener('click', () => {
     }
 });
 
-// Close the mobile menu when a nav link is clicked (optional but good UX)
-// Use event delegation for efficiency
+// Close the mobile menu when a nav link is clicked
 navLinks.addEventListener('click', (event) => {
-    if (event.target.closest('li')) { // Check if a list item or its child was clicked
+    if (event.target.closest('li')) {
         navLinks.classList.remove('nav-active');
         burgerBtn.classList.remove('toggle');
         burgerBtn.setAttribute('aria-expanded', false);
@@ -45,7 +44,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const targetElement = document.querySelector(targetId);
 
         if (targetElement) {
-            // No need to calculate offset manually, use scrollIntoView
             targetElement.scrollIntoView({
                 behavior: 'smooth'
             });
@@ -54,7 +52,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // --- Service Details Toggle ---
-const serviceButtons = document.querySelectorAll('.service-button');  //This is fine.
+const serviceButtons = document.querySelectorAll('.service-button');
 
 serviceButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -80,8 +78,8 @@ if (typeof tns === 'function' && document.querySelector('.testimonial-slider')) 
         slideBy: 'page',
         autoplay: true,
         autoplayButtonOutput: false,
-        controls: false, // Consider adding custom controls for better UX
-        nav: false,     // Consider adding nav dots for better UX
+        controls: false,
+        nav: false,
         mouseDrag: true,
         autoplayTimeout: 6000,
     });
@@ -110,13 +108,7 @@ if (form) {
         if (!isValid) {
             event.preventDefault(); // Prevent form submission if invalid
         } else {
-            // IMPORTANT:  You *must* handle form submission here!
-            // Since this is GitHub Pages (static site), you can't use server-side
-            // processing.  You *must* use a third-party service like Formspree,
-            // Netlify Forms, or a similar service.  This code will *not* send the
-            // form data anywhere without that.
-            console.log("Form is valid, but submission is not implemented yet.");
-            // Add your form submission logic here (using a third-party service).
+            // IMPORTANT: Handle form submission here (using a third-party service)!
         }
     });
 
@@ -145,7 +137,7 @@ if (form) {
         const formGroup = inputElement.parentElement;
         const existingError = formGroup.querySelector('.error-message');
         if (existingError) {
-            existingError.remove();
+			existingError.remove();
 		}
         const errorSpan = document.createElement('span');
         errorSpan.classList.add('error-message');
@@ -169,5 +161,5 @@ if (form) {
 }
 
 // --- Copyright ---
-// Use textContent instead of innerHTML for simple text updates
 document.getElementById("copyright-year").textContent = new Date().getFullYear();
+</script>
